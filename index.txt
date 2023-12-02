@@ -1,1 +1,85 @@
 My name is Gunjan
+Gunjan@DESKTOP-1JLUNGS MINGW64 ~/OneDrive/Desktop/desiredfolder
+$ git init
+Initialized empty Git repository in C:/Users/gunja/OneDrive/Desktop/desiredfolder/.git/
+
+Gunjan@DESKTOP-1JLUNGS MINGW64 ~/OneDrive/Desktop/desiredfolder (master)
+$ ls --lart
+ls: unknown option -- lart
+Try 'ls --help' for more information.
+
+Gunjan@DESKTOP-1JLUNGS MINGW64 ~/OneDrive/Desktop/desiredfolder (master)
+$ ls -lart
+total 12
+drwxr-xr-x 1 Gunjan 197121 0 Dec  2 12:03 ../
+drwxr-xr-x 1 Gunjan 197121 0 Dec  2 12:04 ./
+drwxr-xr-x 1 Gunjan 197121 0 Dec  2 12:04 .git/
+
+Gunjan@DESKTOP-1JLUNGS MINGW64 ~/OneDrive/Desktop/desiredfolder (master)
+$ touch index.txt
+
+Gunjan@DESKTOP-1JLUNGS MINGW64 ~/OneDrive/Desktop/desiredfolder (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Gunjan@DESKTOP-1JLUNGS MINGW64 ~/OneDrive/Desktop/desiredfolder (master)
+$ git add index.txt
+
+Gunjan@DESKTOP-1JLUNGS MINGW64 ~/OneDrive/Desktop/desiredfolder (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.txt
+
+
+Gunjan@DESKTOP-1JLUNGS MINGW64 ~/OneDrive/Desktop/desiredfolder (master)
+$ git commit -m "initial commit"
+[master (root-commit) 0765c27] initial commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index.txt
+
+Gunjan@DESKTOP-1JLUNGS MINGW64 ~/OneDrive/Desktop/desiredfolder (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Gunjan@DESKTOP-1JLUNGS MINGW64 ~/OneDrive/Desktop/desiredfolder (master)
+$ git remote add origin https://github.com/Gunjan564/gunjan.git
+
+Gunjan@DESKTOP-1JLUNGS MINGW64 ~/OneDrive/Desktop/desiredfolder (master)
+$ git branch -M main
+
+Gunjan@DESKTOP-1JLUNGS MINGW64 ~/OneDrive/Desktop/desiredfolder (main)
+$ git push origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 212 bytes | 212.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Gunjan564/gunjan.git
+ * [new branch]      main -> main
+
+Gunjan@DESKTOP-1JLUNGS MINGW64 ~/OneDrive/Desktop/desiredfolder (main)
+$ git remote -v
+origin  https://github.com/Gunjan564/gunjan.git (fetch)
+origin  https://github.com/Gunjan564/gunjan.git (push)
+
+Gunjan@DESKTOP-1JLUNGS MINGW64 ~/OneDrive/Desktop/desiredfolder (main)
+$ code .
+
+Gunjan@DESKTOP-1JLUNGS MINGW64 ~/OneDrive/Desktop/desiredfolder (main)
+$ ^C
+
+Gunjan@DESKTOP-1JLUNGS MINGW64 ~/OneDrive/Desktop/desiredfolder (main)
+$
